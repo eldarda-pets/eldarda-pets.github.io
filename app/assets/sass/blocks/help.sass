@@ -1,0 +1,41 @@
+.help
+	&__title
+		margin: 0 auto
+		text-align: center
+		max-width: 326px
+		color: #545454
+		+georgia400
+		font-size: 35px
+		letter-spacing: 2.1px
+	&__blocks
+		margin: 0 90px
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		text-align: center
+	&__block
+		width: 120px
+		height: 100px
+		margin: 30px
+		&-title
+			margin-top: 20px
+@media screen and ( max-width: 900px )
+	.help
+		&__title
+			margin-bottom: 30px
+		&__blocks
+			margin: 0
+		&__block
+			margin: 0 0 30px
+			width: 33%
+@media screen and ( max-width: 650px )
+	.help
+		&__block
+			width: 50%
+@media screen and ( max-width: 420px )
+	.help
+		&__block
+			width: 100%
+	
+	

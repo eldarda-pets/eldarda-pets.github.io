@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Arial Regular';
+	src: url('assets/fonts/ArialMT.eot');
+	src: url('assets/fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+	url('assets/fonts/ArialMT.woff') format('woff'),
+	url('assets/fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: 'Georgia Regular';
+	src: url('assets/fonts/Georgia.eot');
+	src: url('assets/fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+	url('assets/fonts/Georgia.woff') format('woff'),
+	url('assets/fonts/Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@mixin arial {
+	font-weight: 400;
+	font-family: 'Arial Regular';
+}
+
+@mixin georgia400 {
+	font-family: 'Georgia Regular';
+	font-weight: 400;
+}
+
+@mixin georgia700 {
+	font-family: 'Georgia Regular';
+	font-weight: 700;
+}

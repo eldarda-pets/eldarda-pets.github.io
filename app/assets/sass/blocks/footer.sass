@@ -1,0 +1,52 @@
+.footer
+	background: url("./assets/img/hero/hero-bg.png")
+	padding: 50px 50px 0
+	&-block
+		display: flex
+		justify-content: center
+	&-img
+		max-height: 276px
+		overflow: hidden
+	&-text
+		display: flex
+		align-items: space-between
+	&__item
+		margin-right: 100px
+		&-info
+			display: flex
+			margin-bottom: 30px
+			min-width: 300px
+		h3 
+			max-width: 260px
+			color: #fff
+			+georgia400
+			font-size: 35px
+			margin-bottom: 40px
+		a
+			text-decoration: none
+			color: #f1cdb3
+			font-size: 20px
+			max-width: 245px
+		img
+			margin-right: 15px	
+@media screen and (max-width: 1200px)
+	.footer
+		&-block
+			flex-direction: column
+			align-items: center
+		&-text
+			text-align: center
+			margin-right: -100px
+@media screen and (max-width: 768px)
+	.footer
+		padding: 30px 30px 0
+		&-text
+			flex-direction: column
+			align-items: center
+		&__item
+			h3
+				max-width: 100%
+			&-info
+				justify-content: center
+
+

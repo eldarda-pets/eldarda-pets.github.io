@@ -1,0 +1,38 @@
+.navbar
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+	&__icon
+		display: none
+	&__list
+		display: flex
+		list-style: none
+		margin-right: -30px
+		li
+			margin-right: 30px
+			&::after
+				content: ''
+				margin-top: 5px
+				background-color: #f1cdb3
+				display: block
+				width: 0
+				height: 3px	
+				transition: width .3s
+			&:hover::after
+				width: 100%
+			a
+				text-decoration: none
+				color: #cdcdcd
+@media screen and ( max-width: 768px)
+	.navbar
+		&__logo
+			max-width: 150px
+		&__icon
+			display: block
+		&__list
+			position: absolute
+			flex-direction: column
+			right: -200px
+
+	

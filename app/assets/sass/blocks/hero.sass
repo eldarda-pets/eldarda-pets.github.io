@@ -1,0 +1,55 @@
+.hero
+	background: url("/assets/img/hero/hero-bg.png") no-repeat
+	background-size: cover
+	padding: 50px 30px 0
+	&-block
+		display: flex
+		justify-content: space-between
+	&-img
+		margin-top: -65px
+		width: 720px
+		margin-right: -250px
+		margin-bottom: -4px
+	&__title
+		margin-top: 160px
+		max-width: 350px
+		color: #fff
+		font-size: 44px
+		letter-spacing: 2.64px
+		margin-bottom: 40px
+		+georgia400
+	&__subtitle
+		max-width: 443px
+		color: #cdcdcd
+		line-height: 24px
+		margin-bottom: 40px
+@media screen and ( max-width: 900px )
+	.hero
+		&-block
+			text-align: center
+			flex-direction: column
+		&__title
+			margin: 100px auto 40px
+		&__subtitle
+			margin: 0 auto 40px
+		&__btn
+			margin-bottom: 20px
+		&-img
+			width: 100%
+			img
+				margin-left: 250px				
+@media screen and ( max-width: 768px )
+	.hero-img img 
+		margin-left: 200px
+@media screen and ( max-width: 560px )
+	.hero__btn
+		margin-bottom: 40px
+	.hero-img img 
+		margin-left: 150px
+@media screen and ( max-width: 420px )
+	.hero-img img 
+		margin-left: 100px
+
+
+
+	

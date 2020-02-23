@@ -1,0 +1,33 @@
+.about
+	&-block
+		display: flex
+		justify-content: center
+	&-img
+		margin-right: 120px
+		img
+			min-width: 250px
+	&__title
+		max-width: 320px
+		color: #545454
+		+georgia400
+		font-size: 35px
+		line-height: 45px
+		letter-spacing: 2.1px
+		margin-bottom: 30px
+	&__subtitle
+		max-width: 414px
+		color: #4c4c4c
+		line-height: 24px
+@media screen and ( max-width: 900px )
+	.about
+		&-block
+			flex-direction: column-reverse
+		&-img
+			margin: 0 auto
+		&-text
+			margin: 0 auto 30px
+			text-align: center
+		&__title
+			max-width: 100%
+		&__subtitle
+			margin: 0 auto
