@@ -10,4 +10,5 @@ window.addEventListener("load", () => {
 	function PrevDef(e) {
 		e.preventDefault();
 	}
+	
 })
